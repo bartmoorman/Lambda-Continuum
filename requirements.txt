@@ -1,1 +1,2 @@
+#pip3 install --upgrade --requirement requirements.txt --target . --system
 requests
