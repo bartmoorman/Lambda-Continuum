@@ -1,7 +1,7 @@
 import requests
 
 def lambda_handler(event, context):
-  method = event['method'] if 'method' in event else head
+  method = event['method'] if 'method' in event else 'head'
   timeout = event['timeout'] if 'timeout' in event else 1.0
   allow_redirects = event['allow_redirects'] if 'allow_redirects' in event else True
   verify = event['verify'] if 'verify' in event else True
